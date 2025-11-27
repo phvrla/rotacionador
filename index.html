@@ -61,7 +61,7 @@
     <script>
         (async function() {
             const CONFIG = {
-                                PRESSEL_ID: 404,
+                                PRESSEL_ID: 405,
                 WHITE_PAGE_URL: "https://br.pinterest.com/pin/1125968708141605/",
                 BOT_USERNAME: "luiisarodriguesbot",
                 API_BASE_URL: "https://hottrack-production.up.railway.app"
@@ -90,13 +90,7 @@
             }
             async function registerAndRedirect() {
                 try {
-                    
-            // Verificar se é mobile
-            const isMobile = /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent);
-            if (!isMobile) {
-                window.location.href = CONFIG.WHITE_PAGE_URL;
-                return;
-            } // <<< INJETA O CÓDIGO DE DETECÇÃO
+                     // <<< INJETA O CÓDIGO DE DETECÇÃO
                     
                     const { fbp, fbc } = getFacebookCookies();
                     // Construir payload para /api/registerClick
